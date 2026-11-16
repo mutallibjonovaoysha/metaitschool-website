@@ -1,0 +1,745 @@
+/* ASOSIY O'ZGARUVCHILAR VA SOZLAMALAR */
+:root {
+    --primary-blue: #1d4ed8;
+    --dark-blue: #0f172a;
+    --navy-light: #1e293b;
+    --accent-orange: #f97316;
+    --accent-orange-hover: #ea580c;
+    --white: #ffffff;
+    --bg-light: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --success-bg: #dcfce7;
+    --success-text: #166534;
+    --error-bg: #fee2e2;
+    --error-text: #991b1b;
+    --shadow-sm: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+    --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+    --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.18);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-main);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+/* TUGMALAR */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--accent-orange);
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-orange-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline:hover {
+    border-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-lg {
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* STICKY HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 16px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange));
+    color: var(--white);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.logo-text span {
+    color: var(--accent-orange);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent-orange);
+}
+
+.mobile-nav-btn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, #172554 100%);
+    color: var(--white);
+    padding: 90px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(29, 78, 216, 0.35);
+    border: 1px solid rgba(96, 165, 250, 0.4);
+    color: #93c5fd;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 32px;
+    max-width: 540px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 45px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--accent-orange);
+}
+
+.stat-item span {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Hero Rasm Placeholder */
+.image-placeholder {
+    width: 100%;
+    min-height: 380px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+    border: 2px dashed rgba(96, 165, 250, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.image-placeholder:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-4px);
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.placeholder-box {
+    text-align: center;
+    max-width: 320px;
+}
+
+.placeholder-icon {
+    font-size: 54px;
+    margin-bottom: 16px;
+}
+
+.placeholder-box h3 {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.placeholder-box p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* BO'LIM SARLAVHALARI */
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+/* AFZALLIKLARIMIZ (4 TA USTUN) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 32px 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-blue);
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    background-color: #eff6ff;
+    color: var(--primary-blue);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+/* KURSLAR BO'LIMI */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.course-card {
+    background-color: var(--white);
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-orange);
+}
+
+.course-tag {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.course-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+}
+
+.course-price {
+    background-color: var(--bg-light);
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.price-amount {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.price-period {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.course-details {
+    list-style: none;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.course-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.course-details li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detail-label {
+    color: var(--text-muted);
+}
+
+.detail-value {
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-align: right;
+}
+
+/* RO'YXATDAN O'TISH BO'LIMI */
+.registration {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, #1e3a8a 100%);
+    color: var(--white);
+}
+
+.reg-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.badge-dark {
+    background-color: rgba(249, 115, 22, 0.2);
+    border-color: rgba(249, 115, 22, 0.5);
+    color: #fdba74;
+}
+
+.reg-info h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.reg-info p {
+    color: #cbd5e1;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.reg-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.reg-form-box {
+    background-color: var(--white);
+    color: var(--text-main);
+    padding: 38px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--bg-light);
+    color: var(--dark-blue);
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+}
+
+/* Bildirishnoma xabari */
+.form-message {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background-color: var(--success-bg);
+    color: var(--success-text);
+    border: 1px solid #86efac;
+}
+
+.form-message.error {
+    display: block;
+    background-color: var(--error-bg);
+    color: var(--error-text);
+    border: 1px solid #fca5a5;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark-blue);
+    color: #cbd5e1;
+    padding: 70px 0 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 320px;
+}
+
+.footer h3 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.footer-contact a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-social p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-btn {
+    padding: 10px 18px;
+    background-color: var(--navy-light);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    background-color: var(--accent-orange);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* RESPONSIVE DIZAYN (PLANSHET VA MOBIL QURILMALAR) */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin: 0 auto 32px;
+    }
+
+    .hero-buttons,
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reg-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-nav-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-blue);
+        padding: 24px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .mobile-nav-btn {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .features-grid,
+    .courses-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reg-form-box {
+        padding: 26px 20px;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+}

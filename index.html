@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPark Academy — Zamonaviy IT O'quv Markazi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- HEADER (YUQORI MENYU) -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Tech<span>Park</span></span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#afzalliklar" class="nav-link">Afzalliklarimiz</a></li>
+                    <li><a href="#kurslar" class="nav-link">Kurslar</a></li>
+                    <li><a href="#royxatdan-otish" class="nav-link">Ro'yxatdan o'tish</a></li>
+                    <li><a href="#aloqa" class="nav-link">Aloqa</a></li>
+                </ul>
+                <a href="#royxatdan-otish" class="btn btn-primary mobile-nav-btn">Bepul darsga yozilish</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#royxatdan-otish" class="btn btn-primary desktop-nav-btn">Bepul darsga yozilish</a>
+                <button class="hamburger" id="hamburger" aria-label="Menyuni ochish">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (ASOSIY EKRAN) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">🚀 2026-yilgi yangi guruhlarga qabul boshlandi!</span>
+                <h1 class="hero-title">Kelajak kasblarini biz bilan o'rganing!</h1>
+                <p class="hero-description">
+                    Noldan boshlab xalqaro darajadagi IT mutaxassisiga aylaning. Amaliy loyihalar, kuchli mentorlar va ishga joylashishda kafolatlangan yordam.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#kurslar" class="btn btn-primary btn-lg">Kurslarni ko'rish</a>
+                    <a href="#royxatdan-otish" class="btn btn-outline btn-lg">Bepul konsultatsiya</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>1 200+</strong>
+                        <span>Bitiruvchilar</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>85%</strong>
+                        <span>Ishga joylashish</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>15+</strong>
+                        <span>Tajribali mentorlar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O'ng tomondagi rasm uchun bo'sh ramka (Placeholder) -->
+            <div class="hero-media">
+                <div class="image-placeholder">
+                    <!-- O'zingizning rasmingizni qo'yish uchun quyidagi <img> tegini izohdan chiqaring va placeholder-box ni o'chiring: -->
+                    <!-- <img src="rasm-manzili.jpg" alt="IT o'quv markazi talabalari"> -->
+                    <div class="placeholder-box">
+                        <div class="placeholder-icon">💻</div>
+                        <h3>IT Muhit &amp; Dasturlash</h3>
+                        <p>Bu yerga o'quv markazingiz yoki talabalar rasmini joylashtiring (Tavsiya etilgan o'lcham: 600x500px)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AFZALLIKLARIMIZ BO'LIMI -->
+    <section class="features section" id="afzalliklar">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nima uchun aynan biz?</span>
+                <h2 class="section-title">Bizning asosiy afzalliklarimiz</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Amaliy loyihalar</h3>
+                    <p>O'qish davomida quruq nazariya emas, balki real mijozlar uchun ishlaydigan portfolio loyihalar yaratasiz.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Tajribali mentorlar</h3>
+                    <p>Yirik IT kompaniyalarda kamida 3-5 yillik tajribaga ega Senior va Middle dasturchilardan saboq olasiz.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Rasmiy sertifikat</h3>
+                    <p>Kursni muvaffaqiyatli tamomlagan har bir bitiruvchiga bilimini tasdiqlovchi maxsus sertifikat topshiriladi.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Ishga joylashishda yordam</h3>
+                    <p>Rezyume tayyorlash, suhbatlarga tayyorgarlik va hamkor IT kompaniyalarga tavsiya qilish xizmati mavjud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KURSLAR BO'LIMI -->
+    <section class="courses section bg-light" id="kurslar">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">O'zingizga mos yo'nalishni tanlang</span>
+                <h2 class="section-title">Zamonaviy IT Kurslarimiz</h2>
+            </div>
+
+            <div class="courses-grid">
+                <!-- 1-kurs: Frontend -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Dasturlash</span>
+                        <h3 class="course-title">Frontend dasturlash</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 200 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">6 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 2 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">14 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="Frontend dasturlash">
+                        Kursga yozilish
+                    </button>
+                </article>
+
+                <!-- 2-kurs: Backend Python -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Dasturlash</span>
+                        <h3 class="course-title">Backend Python</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 400 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">7 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 2 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">15 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="Backend Python">
+                        Kursga yozilish
+                    </button>
+                </article>
+
+                <!-- 3-kurs: Grafik dizayn -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Dizayn</span>
+                        <h3 class="course-title">Grafik dizayn</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 100 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">5 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 2 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">13 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="Grafik dizayn">
+                        Kursga yozilish
+                    </button>
+                </article>
+
+                <!-- 4-kurs: SMM va Targeting -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Marketing</span>
+                        <h3 class="course-title">SMM va Targeting</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 000 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">3 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 1.5 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">16 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="SMM va Targeting">
+                        Kursga yozilish
+                    </button>
+                </article>
+
+                <!-- 5-kurs: Kiberxavfsizlik -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Xavfsizlik</span>
+                        <h3 class="course-title">Kiberxavfsizlik</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 600 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">6 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 2 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">16 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="Kiberxavfsizlik">
+                        Kursga yozilish
+                    </button>
+                </article>
+
+                <!-- 6-kurs: Mobil dasturlash -->
+                <article class="course-card">
+                    <div class="course-header">
+                        <span class="course-tag">Mobil</span>
+                        <h3 class="course-title">Mobil dasturlash</h3>
+                    </div>
+                    <div class="course-price">
+                        <span class="price-amount">1 500 000</span>
+                        <span class="price-period">so'm / oy</span>
+                    </div>
+                    <ul class="course-details">
+                        <li>
+                            <span class="detail-label">⏳ Davomiyligi:</span>
+                            <span class="detail-value">7 oy</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">📅 Dars jadvali:</span>
+                            <span class="detail-value">Haftada 3 kun, 2 soatdan</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">👤 Qabul yoshi:</span>
+                            <span class="detail-value">15 yoshdan boshlab</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block enroll-btn" data-course="Mobil dasturlash">
+                        Kursga yozilish
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RO'YXATDAN O'TISH BO'LIMI -->
+    <section class="registration section" id="royxatdan-otish">
+        <div class="container">
+            <div class="reg-wrapper">
+                <div class="reg-info">
+                    <span class="badge badge-dark">🔥 Birinchi dars mutlaqo bepul!</span>
+                    <h2>Kursga ro'yxatdan o'ting</h2>
+                    <p>
+                        O'zingizga ma'qul yo'nalishni tanlang va ma'lumotlaringizni qoldiring. Administratorlarimiz 15 daqiqa ichida siz bilan bog'lanib, barcha savollaringizga javob berishadi.
+                    </p>
+                    <ul class="reg-benefits">
+                        <li>✅ Bepul sinov darsida qatnashish imkoniyati</li>
+                        <li>✅ Darajangizni aniqlash uchun bepul suhbat</li>
+                        <li>✅ Bo'lib to'lash (rassrochka) imkoniyati</li>
+                    </ul>
+                </div>
+
+                <div class="reg-form-box">
+                    <form id="registration-form" class="reg-form">
+                        
+                        <!-- FORMA MAYDONLARI BOSHLANISHI -->
+                        <!-- ESLATMA: Bu yerga istalgan yangi input, select yoki textarea qo'shishingiz mumkin. 
+                             Muhimi: har bir maydonda "name" atributi bo'lishi shart! (Masalan: name="Yoshi" yoki name="Hudud").
+                             Telegram botga aynan shu "name" nomi bilan ma'lumot boradi. -->
+
+                        <div class="form-group">
+                            <label for="ism">Ism va familiyangiz *</label>
+                            <input type="text" id="ism" name="Ism" placeholder="Masalan: Sardor Aliyev" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefon">Telefon raqamingiz *</label>
+                            <input type="tel" id="telefon" name="Telefon raqami" placeholder="+998 90 123 45 67" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kurs-select">Qaysi kursni tanlaysiz? *</label>
+                            <select id="kurs-select" name="Tanlangan kurs" required>
+                                <option value="" disabled selected>Kursni tanlang...</option>
+                                <option value="Frontend dasturlash">Frontend dasturlash</option>
+                                <option value="Backend Python">Backend Python</option>
+                                <option value="Grafik dizayn">Grafik dizayn</option>
+                                <option value="SMM va Targeting">SMM va Targeting</option>
+                                <option value="Kiberxavfsizlik">Kiberxavfsizlik</option>
+                                <option value="Mobil dasturlash">Mobil dasturlash</option>
+                            </select>
+                        </div>
+
+                        <!-- FORMA MAYDONLARI TUGASHI -->
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                            Arizani yuborish
+                        </button>
+
+                        <!-- Muvaffaqiyatli yoki xatolik xabari chiqadigan joy -->
+                        <div id="form-message" class="form-message" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (PASTKI QISM) -->
+    <footer class="footer" id="aloqa">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <span class="logo-icon">&lt;/&gt;</span>
+                        <span class="logo-text">Tech<span>Park</span></span>
+                    </a>
+                    <p>
+                        Zamonaviy kasblarni amaliyot orqali o'rgatuvchi innovatsion IT ta'lim markazi. Kelajagingizni bugundan quring!
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Biz bilan aloqa</h3>
+                    <ul>
+                        <li><strong>📍 Manzil:</strong> Toshkent shahri, Chilonzor tumani, Bunyodkor ko'chasi, 42-uy</li>
+                        <li><strong>🧭 Mo'ljal:</strong> Novza metro bekati ro'parasida</li>
+                        <li><strong>⏰ Ish vaqti:</strong> Dushanba - Shanba, 09:00 dan 20:00 gacha</li>
+                        <li><strong>📞 Telefon:</strong> <a href="tel:+998901234567">+998 (90) 123-45-67</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Ijtimoiy tarmoqlar</h3>
+                    <p>Yangiliklar va bepul darslarni kuzatib boring:</p>
+                    <div class="social-links">
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="social-btn">Telegram</a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-btn">Instagram</a>
+                        <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="social-btn">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechPark Academy. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
